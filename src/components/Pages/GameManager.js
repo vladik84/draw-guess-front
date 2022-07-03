@@ -34,7 +34,7 @@ const GameManager = () => {
 
   return (
     <div>
-      {data && data.players === 1 && <div>waiting</div>}
+      {data && data.players === 1 && <h2>Waiting for other player to join the game</h2>}
       {data && data.players === 2 && role === "drawing" && (
         <Draw onPlayerFinishDrawing={onFinishDrawingHandler} gameId={gameId} />
       )}
